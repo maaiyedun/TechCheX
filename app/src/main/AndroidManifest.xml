@@ -8,6 +8,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TechCheX" />
+        android:theme="@style/Theme.TechCheX">
+        <activity android:name=".Vehicle_maintain_screen"></activity>
+        <activity android:name=".Housing_application_screen" />
+        <activity android:name=".Housing_maintain_screen" />
+        <activity android:name=".Housing_Status_screen" />
+        <activity android:name=".Home_screen" />
+        <activity android:name=".Login_screen" />
+    </application>
 
 </manifest>
