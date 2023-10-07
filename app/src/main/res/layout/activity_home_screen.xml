@@ -6,4 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".Home_screen">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="198dp"
+        android:layout_height="115dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="113dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="189dp"
+        android:layout_height="108dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="192dp"
+        android:layout_height="109dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="489dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
