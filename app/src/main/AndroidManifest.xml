@@ -8,11 +8,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TechCheX">
-        <activity
-            android:name=".Login_screen"
-            android:label="@string/title_activity_login_screen"
-            android:theme="@style/Theme.TechCheX.NoActionBar"></activity>
-    </application>
+        android:theme="@style/Theme.TechCheX" />
 
 </manifest>
