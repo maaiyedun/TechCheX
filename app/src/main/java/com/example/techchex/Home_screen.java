@@ -2,6 +2,7 @@ package com.example.techchex;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,7 @@ public class Home_screen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(Home_screen.this, "You clicked House Button", Toast.LENGTH_SHORT).show();
+                houseActivity();
             }
         });
 
@@ -31,6 +33,7 @@ public class Home_screen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(Home_screen.this, "You clicked Car Button", Toast.LENGTH_SHORT).show();
+                carActivity();
             }
         });
 
@@ -39,8 +42,22 @@ public class Home_screen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(Home_screen.this, "You clicked Health Button", Toast.LENGTH_SHORT).show();
+                healthActivity();
             }
         });
-
     }
+        public void houseActivity() {
+            Intent intent = new Intent(this, Housing_application_screen.class);
+            startActivity(intent);
+        }
+
+        public void carActivity() {
+            Intent intent = new Intent(this, Vehicle_maintain_screen.class);
+            startActivity(intent);
+        }
+
+        public void healthActivity() {
+            Intent intent = new Intent(this, health_screen.class);
+            startActivity(intent);
+        }
 }
