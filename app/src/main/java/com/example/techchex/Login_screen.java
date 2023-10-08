@@ -24,7 +24,7 @@ public class Login_screen extends AppCompatActivity {
     }
 
     public void updateText(View view) {
-        textView.setText("Hi" + inputText.getText());
+        textView.setText("");
         System.out.println("Button clicked");
         if(inputText.equals(Password)){
             findViewById(R.id.loginbtn).setOnClickListener(v->{startActivity(new Intent(getApplicationContext(), Home_screen.class));});
