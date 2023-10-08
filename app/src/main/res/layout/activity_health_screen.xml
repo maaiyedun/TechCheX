@@ -6,4 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".health_screen">
 
+    <ImageButton
+        android:id="@+id/healthDocButton"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="300dp"
+        android:contentDescription="Health Documents Icon"
+        android:scaleType="fitCenter"
+        android:src="@drawable/healthdoc_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/smartwatchButton"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="300dp"
+        android:contentDescription="Smart Watch Icon"
+        android:scaleType="fitCenter"
+        android:src="@drawable/smartwatch_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="178dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:text="Upload Health Documents"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.200"
+        app:layout_constraintStart_toEndOf="@+id/healthDocButton"
+        app:layout_constraintVertical_bias="0.350"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="178dp"
+        android:layout_height="131dp"
+        android:text="Connect to
+                    Smart Watch"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/smartwatchButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.350"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
