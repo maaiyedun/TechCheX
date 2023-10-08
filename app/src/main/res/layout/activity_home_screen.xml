@@ -6,4 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".Home_screen">
 
+    <ImageButton
+        android:id="@+id/houseButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/house_icon"
+        android:contentDescription="House Icon"
+        app:layout_constraintBottom_toTopOf="@+id/carButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/carButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/car_icon"
+        android:contentDescription="Car Icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/healthButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/health_icon"
+        android:contentDescription="Health Icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carButton"
+         />
 </androidx.constraintlayout.widget.ConstraintLayout>
